@@ -5,10 +5,11 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 import org.springframework.context.annotation.ComponentScan;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class Employee{
+public class Employee implements Serializable {
     private Long id;
     private String username;
     private String name;

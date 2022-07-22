@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
-public class ShoppingCart{
+public class ShoppingCart implements Serializable{
     private Long id;
     private String name;
     private Long userId;

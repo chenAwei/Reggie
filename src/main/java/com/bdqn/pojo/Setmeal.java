@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class Setmeal{
+public class Setmeal implements Serializable{
     private Long id;
     private Long categoryId;
     private String name;

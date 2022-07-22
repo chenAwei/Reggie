@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
-public class Orders{
+public class Orders implements Serializable{
     private Long id;
     private String number;
     private Integer status;

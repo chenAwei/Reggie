@@ -5,10 +5,11 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class Category {
+public class Category implements Serializable {
     private Long id;
     private Integer type;
     private String name;

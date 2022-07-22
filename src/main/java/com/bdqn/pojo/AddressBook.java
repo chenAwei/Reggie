@@ -4,10 +4,11 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class AddressBook {
+public class AddressBook implements Serializable {
     private Long id;
     private Long userId;
     private String consignee;

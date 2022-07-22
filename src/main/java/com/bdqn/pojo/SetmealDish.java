@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class SetmealDish{
+public class SetmealDish implements Serializable{
     private Long id;
     private Long setmealId;
     private Long dishId;

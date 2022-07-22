@@ -2,10 +2,11 @@ package com.bdqn.pojo;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Data
-public class OrderDetail{
+public class OrderDetail implements Serializable {
     private Long id;
     private String name;
     private Long orderId;
