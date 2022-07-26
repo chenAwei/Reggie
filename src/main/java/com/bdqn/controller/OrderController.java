@@ -21,7 +21,7 @@ public class OrderController {
     @Autowired
     private OrdersService ordersService;
 
-    @GetMapping("/userPage")
+    @GetMapping("/page")
     public R<Page> page(Integer page, Integer pageSize, String number, String beginTime, String endTime){
         Page<Orders> ordersPage = new Page<>(page,pageSize);
         LambdaQueryWrapper<Orders> queryWrapper = new LambdaQueryWrapper<>();

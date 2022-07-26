@@ -35,6 +35,7 @@ public class SetmealController {
     private SetmealDishService setmealDishService;
 
     @PostMapping
+    @CacheEvict(value = "setmealCache",allEntries = true)
     public R<String> save(@RequestBody SetmealDto setmealDto){
         setmealService.saveWithDish(setmealDto);
 
